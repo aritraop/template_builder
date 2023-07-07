@@ -17,7 +17,7 @@ for (const elem of parsed) {
   const publicPath = path.join(__dirname + '/..' + `/public/${elem.type}.html`)
   const template = fs.readFileSync(publicPath, { encoding: 'utf8' })
   //update the body
-  elem.html_body = template
+  elem.html_body = template.replace('<script src="//localhost:35729/livereload.js"></script>', '')
   console.log('modified...' + elem.type + ' template')
 }
 
