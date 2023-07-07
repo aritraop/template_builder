@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "fetch": "node ./src/scripts/fetch.js",
+    "create_html": "node ./src/scripts/extract_html.js",
+    "view": "node ./src/server.js",
+    "finalize": "node ./src/scripts/finalize.js",
+    "upload": "node ./src/scripts/upload.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "livereload": "^0.9.3",
+    "mongodb": "^5.7.0"
+  }
+}
